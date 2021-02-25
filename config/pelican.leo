@@ -49,6 +49,7 @@
 </v>
 <v t="yen.20170108171733.71"><vh>@path markdown</vh>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
+<v t="leo.20210225200944.1"><vh>@edit pages_2.md</vh></v>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
 </v>
@@ -93,9 +94,9 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180423103656.1">@language md
 ---
 Title: 2020 Fall CP 課程
-Date: 2020-08-13 11:00
-Category: Misc
-Tags: 2020FallCP
+Date: 2021-02-25 11:00
+Category: Class
+Tags: 2021cd2021
 Slug: 2020-Fall-Intro-to-computer-programming-1
 Author: yen
 ---
