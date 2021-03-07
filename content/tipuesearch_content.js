@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': '主頁', 'text': '倉儲： https://github.com/40823142/cd2021 \n \n \n', 'tags': '', 'url': '主頁.html'}]};
+var tipuesearch = {"pages": [{'title': '主頁', 'text': '倉儲： https://github.com/40823142/cd2021 \n \n', 'tags': '', 'url': '主頁.html'}, {'title': 'W2 進度報告', 'text': '我們這組做的是纜車 \n 這是模擬圖： \n \n 目前畫的零件： \n 1.站台 \n \n 2.輪子 1\xa0 \n \n 3.輪子2 \n \n 4.連接桿 \n 5.輸送帶 \n \n', 'tags': '', 'url': 'W2 進度報告.html'}]};
