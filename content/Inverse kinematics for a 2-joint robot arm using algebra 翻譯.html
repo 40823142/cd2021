@@ -133,30 +133,109 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W6 進度報告 << <a href='W6 進度報告.html'>Previous</a> <a href='W8.W9 進度報告.html'>Next</a> >> W8.W9 進度報告<br /><h1>W7 進度報告</h1>
+    <div id="tipue_search_content">Inverse kinematics for a 2-joint robot arm using geometry 翻譯 << <a href='Inverse kinematics for a 2-joint robot arm using geometry 翻譯.html'>Previous</a> <br /><h1>Inverse kinematics for a 2-joint robot arm using algebra 翻譯</h1>
 <p></p>
-<p>第四版組合圖</p>
 <p></p>
-<p><img alt="" height="555" src="./../images/第四代組合圖.png" width="600"/></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/eIZuz1XCd0w" title="YouTube video player" width="560"></iframe></p>
 <p></p>
-<p>第四版本模擬</p>
-<p>因為模擬後發現如果開模擬後某一個桿子會跟中心點卡到</p>
-<p>開模擬會直接撞爛</p>
-<p>所以就沒有再模擬下去了</p>
+<p>Here we have the same two link robot as we just looked at but this time we're going to solve it using an analytical approach,</p>
 <p></p>
-<p><img alt="" height="294" src="./../images/Hnet-image (1).gif" width="600"/></p>
 <p></p>
-<p>第五版本模擬</p>
-<p>新增避讓 簡化零件 美化零件</p>
-<p>這個版本是先模擬一部份如果沒有問題就可以繼續模擬下去</p>
 <p></p>
-<p><img alt="" height="294" src="./../images/Hnet.com-image (1).gif" width="600"/></p>
+<p>that is we're going to rely much more on algebra,</p>
 <p></p>
-<p>第六版本組合圖</p>
-<p>因為發現有些錯誤就沒有模擬</p>
 <p></p>
-<p><img alt="" height="442" src="./../images/第六代.png" width="600"/></p>
-<br />W6 進度報告 << <a href='W6 進度報告.html'>Previous</a> <a href='W8.W9 進度報告.html'>Next</a> >> W8.W9 進度報告</div>
+<p></p>
+<p>particular linear algebra rather than geometry.</p>
+<p></p>
+<p></p>
+<p></p>
+<p><br/>We have an expression E, which is the homogeneous transformation which represents the pose of the robots endefector and we looked at this in the last lecture,</p>
+<p></p>
+<p></p>
+<p></p>
+<p>we can write the endefector pose as a sequence of elementary homogeneous transformations.</p>
+<p></p>
+<p></p>
+<p></p>
+<p>A rotation by Q1, a translation along the X direction by A1, a rotation by Q2 and then a translation in the X direction by A2.</p>
+<p></p>
+<p></p>
+<p></p>
+<p>If I expand this out, multiply all the transformations together,</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>I get the expression shown here; a three by three homogeneous transformation</p>
+<p>matrix representing the pose of the robot's endefector.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Now for this particular two link robot, we are only interested in the position of its endefector, it's X and Y co-ordinate and they are these two elements within the homogeneous</p>
+<p>transformation matrix, so I'm going to copy those out.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>So here again is our expression for X and Y and what we're going to do is</p>
+<p>a fairly common trick, we're going to square and add these two equations and I get a relationship that looks like this.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Now I can solve for the joint angle Q2 in terms of the endefector pose X and Y and the robot's constants A1 and A2.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Now what I'm going to do is apply the sum of angles identity.</p>
+<p>I'm going to expand these terms, sine of Q1 plus Q2 or cos of Q1 plus<br/>Q2 and to make life a little bit easier,</p>
+<p></p>
+<p></p>
+<p></p>
+<p>I'm going to make some substations, so where ever I had cos Q2,</p>
+<p>I'm going to write C2 and where ever I had sine Q2, I’m going to write S2.</p>
+<p></p>
+<p></p>
+<p></p>
+<p><br/>It's a fairly common shorthand when people</p>
+<p>are looking at robot kinematic equations.</p>
+<p></p>
+<p></p>
+<p></p>
+<p><br/>And here are the equations after making those</p>
+<p>substitutions. Looking at these two equations,</p>
+<p></p>
+<p></p>
+<p></p>
+<p><br/>I can see that they fall into a very well</p>
+<p>known form and for that form there is a very<br/>well known solution.</p>
+<p></p>
+<p></p>
+<p></p>
+<p>So I'm going to consider just one of the equations,</p>
+<p>the equation for Y and using our well known identity and it's solution,</p>
+<p></p>
+<p></p>
+<p>I can determine the values for the variables little a, little b and little c and once I've determined those,</p>
+<p>then I can just write down the solution for Q1,</p>
+<p>which is the equivalent of theta in this particular case.</p>
+<p></p>
+<p></p>
+<p>Here again is our expression for Q1,</p>
+<p>copied over from the previous slide and we may remember from earlier in our workings that we determined this particular relationship;</p>
+<p>X squared plus Y squared is equal to this particular complex expression.</p>
+<p></p>
+<p></p>
+<p></p>
+<p>So I can substitute that in and do some simplification and I end up with this<br/>slightly less complex expression for Q1.</p>
+<p></p>
+<p></p>
+<p>And it is the same expression that I got following the geometric approach in the previous section.</p>
+<p></p><br />Inverse kinematics for a 2-joint robot arm using geometry 翻譯 << <a href='Inverse kinematics for a 2-joint robot arm using geometry 翻譯.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
