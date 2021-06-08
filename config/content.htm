@@ -225,66 +225,70 @@
 <p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/IKOGwoJ2HLk" title="YouTube video player" width="560"></iframe></p>
 <p>We saw this simple two-link robot in the previous lecture about forward kinematics.</p>
+<p>我們在上一堂關於正向運動學的講座中看到了這個簡單的雙連桿</p>
 <p></p>
 <p>The tooltip pose of this robot is described simply by two numbers,</p>
-<p></p>
+<p>這個連桿的工具提示動作簡單的用兩個數字來描述</p>
 <p></p>
 <p>the coordinates x and y with respect to the world coordinate frame.</p>
-<p></p>
+<p>相對於世界坐標系的坐標x和y</p>
 <p></p>
 <p>So, the problem here is that given x and y,</p>
-<p></p>
+<p>所以，這裡的問題是給定x和y，</p>
 <p><br/>we want to determine the joined angles, Q1 and Q2.</p>
-<p></p>
+<p>我們想要確定連接的角度，Q1和Q2。</p>
 <p></p>
 <p>The solution that we’re going to follow in this particular section is a geometric one.</p>
-<p></p>
+<p>在這個特殊的部分，我們將要遵循的解是一個幾何解。</p>
 <p></p>
 <p>We’re going to start with a simple piece of construction.</p>
-<p></p>
+<p>我們將從一塊簡單的結構開始。</p>
 <p></p>
 <p>We’re going to overlay the red triangle on top of our robot.</p>
-<p></p>
+<p>我們要把紅色三角形覆蓋在連桿上面。</p>
 <p></p>
 <p>We know that the end point coordinate is x,y,</p>
-<p></p>
+<p>我們知道終點坐標是x，y，</p>
 <p></p>
 <p>so the vertical height of the triangle is y, the horizontal width is x.</p>
-<p></p>
+<p>所以三角形的垂直高度是y，水平宽度是x。</p>
 <p></p>
 <p>And, using Pythagoras theorem, we can write r squared equals x squared plus y squared.</p>
-<p></p>
+<p>利用畢式定理，我們可以寫出r的平方等於x的平方加上y的平方。</p>
 <p></p>
 <p>So far, so easy.</p>
-<p></p>
+<p>到目前為止，一切都很簡單。</p>
 <p>Now, we’re going to look at this triangle highlighted here in red and we want to determine</p>
 <p>the angle alpha.</p>
+<p>現在，我們要看一下這裡用紅色突出顯示的這個三角形，我們想要確定。角度Alpha。</p>
 <p></p>
+<p>In order to do that, we need to use the cosine rule.</p>
+<p>為了達成這一點，我們需要使用餘弦定理。</p>
 <p></p>
-<p>In order to do that, we need to use the cosine<br/>rule.</p>
-<p></p>
-<p></p>
-<p>And, if you’re a little rusty on the cosine<br/>rule, here is a bit of a refresher.</p>
-<p></p>
+<p>And, if you’re a little rusty on the cosine rule, here is a bit of a refresher.</p>
+<p>如果你對余弦定理有點不熟悉。這裡有一個複習。</p>
 <p></p>
 <p>We have an arbitrary triangle.</p>
-<p></p>
+<p>我們有一個任意的三角形。</p>
 <p></p>
 <p>We don’t have to have any right angles in it</p>
-<p></p>
-<p>and we’re going to label the length of this edge as A and the angle opposite that</p>
-<p>edge, we’re going to label as little a.</p>
-<p></p>
+<p>我們不用有任何直角。</p>
+<p>and we’re going to label the length of this edge as A and the angle</p>
+<p>opposite that edge, we’re going to label as little a.</p>
+<p>我們將這條邊的長度標記為A角。</p>
+<p>另外在那個邊緣的對面，我們將標記為小a角。</p>
 <p></p>
 <p>And, we do the same for this edge and this<br/>angle, and this edge and this angle.</p>
-<p></p>
+<p>我們對邊邊和這角度，以及邊邊和這個角度做同樣的事</p>
 <p></p>
 <p>So, all together, the sides are labelled capitals<br/>A, B and C, and the angles are labelled little</p>
 <p>a, little b, and little c.</p>
 <p></p>
+<p>所以所有邊都標記為大寫字母 A、B 和 C，角標記為小 a、小 b 和小 c。</p>
 <p></p>
-<p>So, the cosine rule is simply this relationship<br/>here.</p>
 <p></p>
+<p>So, the cosine rule is simply this relationship here.</p>
+<p>所以餘弦定理在這裡就是這種關係</p>
 <p></p>
 <p>It’s a bit like Pythagoras’ theorem except for this extra term on the end with the cos a in it.</p>
 <p></p>
@@ -434,8 +438,7 @@
 <p><span>Let’s compare the two solutions, the case where q2 is positive and the case where q2 is negative.</span></p>
 <p></p>
 <p></p>
-<p></p>
-<h3>Inverse kinematics for a 2-joint robot arm using algebra 翻譯</h3>
+<p></p><h3>Inverse kinematics for a 2-joint robot arm using algebra 翻譯</h3>
 <p></p>
 <p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/eIZuz1XCd0w" title="YouTube video player" width="560"></iframe></p>
