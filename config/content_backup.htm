@@ -203,7 +203,27 @@
 <p></p>
 <h1>Tasks</h1>
 <h2>Task 1</h2>
-<p>['stage3_ag1\t40823131\t40823131\t40823112\ta40823112\t40823123\t40823123\t40823145\t40823145\t40823136\t40823136\t40823109\t40823109\t40823116\t40823116\t40823108\t40823108\n', 'stage3_ag2\t40823151\t40823151\t40623121\t40623121\t40871106\t40871106\t40823102\t40823102\t40823104\t40823104\t40823106\t40823106\t40823101\t40823101\t40823132\t40823132\n', 'stage3_ag3\t40823119\t40823119\t40823150\t40823150\t40823103\t40823103\t40823107\t40823107\t40523252\t40523252\t40823154\t40823154\t\t\t\t\n', 'stage3_ag4\t40823142\t40823142\t40823144\t40823144\t40823127\t40823127\t40823148\t40823148\t40823121\t40823121\t40823135\t40823135\t40823114\t40823114\t40823146\t40823146\n', 'stage3_ag5\t40823111\t40823111\t40823115\t40823115\t40823128\t40823128\t40823120\t40823120\t40823140\t40823140\t40823124\t40823124\t40823139\t40823139\t40823126\t40823126\n', 'stage3_ag6\t40823152\t40823152\t40823110\t40823110\t40823122\t40823122\t40823125\t40823125\t40823117\t40823117\t40823129\t40823129\t40823149\t40823149\t40823153\t40823153']</p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("stage3_2a.txt") as cc: 
+    #with open(x) as y:  打開名為X的檔案 並寫入Y的變數中
+    data = cc.readlines() 
+    #讀取cc變數並讀取檔案所有行
+    print(data)
+    #打出data所讀取的資料
+for i in range(len(data)):  
+    #迴圈 回報data裡字串的長度(==6) 再放到i變數裡
+    group = data[i].rstrip("\n").split("\t")
+    #把data列表中第i項 刪除元素\n(換行)然後用\t來分空格(Tab)
+    print('&lt;p&gt;'+group[0]+'|&lt;a href="https://'+group[1]+'.github.io/stage3-ag'+group[0][9]+'"&gt;網站&lt;/a&gt;|&lt;a href="https://github.com/'+group[2]+'/stage3-ag'+group[0][9]+'"&gt;倉儲&lt;/a&gt;&lt;/p&gt;')
+    #打出list 中的元素，放入html格式所以前面跟句尾要加上&lt;p&gt;和&lt;/p&gt;
+   
+
+
+    for j in range(2,18,2):
+        try:
+            print('&lt;p&gt;'+group[j]+'|Website:'+'&lt;a href="https://'+group[j]+'.github.io/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt;'+'|Repository:'+'&lt;a href="https://github.com/'+group[j]+'/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt;&lt;/p&gt;')
+        except:
+            continue</pre>
 <p>stage3_ag1|<a href="https://40823131.github.io/stage3-ag1">網站</a>|<a href="https://github.com/40823131/stage3-ag1">倉儲</a></p>
 <p>40823131|Website:<a href="https://40823131.github.io/cd2021">40823131</a>|Repository:<a href="https://github.com/40823131/cd2021">40823131</a></p>
 <p>a40823112|Website:<a href="https://a40823112.github.io/cd2021">a40823112</a>|Repository:<a href="https://github.com/a40823112/cd2021">a40823112</a></p>
@@ -259,7 +279,6 @@
 <p>40823149|Website:<a href="https://40823149.github.io/cd2021">40823149</a>|Repository:<a href="https://github.com/40823149/cd2021">40823149</a></p>
 <p>40823153|Website:<a href="https://40823153.github.io/cd2021">40823153</a>|Repository:<a href="https://github.com/40823153/cd2021">40823153</a></p>
 <p>&gt;Exit code: 0</p>
-
 <h2>Task 2</h2>
 <p>參考老師提供的bubbleRob_remoteAPI.ttt 檔案</p>
 <p><img alt="" height="430" src="/images/task 1.png" width="800"/></p>
@@ -280,7 +299,9 @@
 <p><img caption="false" height="624" src="/images/api-1.gif" width="600"/></p>
 <p></p>
 <h1>各周作業</h1>
-<h2>w15</h2>
+<h2>W14</h2>
+<p>RobotDk操作</p>
+<h2>W15</h2>
 <p>這兩部影片是解釋如果給定XY座標二連桿要分別轉多少度才能達到指定座標的算法</p>
 <h3>Inverse kinematics for a 2-joint robot arm using geometry 翻譯</h3>
 <p></p>
